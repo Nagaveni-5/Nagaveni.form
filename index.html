@@ -3,11 +3,66 @@
  <head>
   <title> Register form</title>
   <style>
-
+  
   </style>
-  </head> 
-  <body>
-  <h3> Registration Form </h1>
+  body{
+     font-family: 'Segoe UI', sans-serif;
+     background: linear gradient(to right, lightcyan, white);
+     color:black;
+     margin:0;
+     padding:40px; 
+    }
+   h1{
+    text-align:center;
+    color:red;
+    margin-bottom:30px;
+    }
+  Form{
+     max-width:600px;
+     background-color:white;
+     margin:auto; padding:25px 40px;
+     border-radius:15px; 15px;
+     box-shadow: 4px 10px rgba(0,0,0,0.1);
+   }
+  label{
+     display:block;
+     margin-top: 15px; font-weight:bold; color:blue;
+     input[type="text"],
+     input[type="email"], 
+     input[type="password"],
+     input[type="date"],
+     select,
+     input[type="file"] {
+     width: 100%;
+     padding:10px; 
+     margin-top:5px; 
+     border: 1px solid lightseagreen;
+     border-radius:8px; 
+     background-color:aliceblue;
+     }
+     input[type="radio"], 
+     input[type="checkbox"]{
+     margin-right:10px;
+     }
+    input[type="submit"],
+    input[type="reset"] {
+    padding: 10px 20px;
+    border:none;
+    border-radius: 8px;
+    background-color:mediumturquoise;
+    color:white;
+    cursor:pointer;
+    margin-top:20px; margin-right:10px;
+    font-weight:bold;
+    }
+   input[type="submit"]:hover,
+   input[type="reset"]:hover {
+   background color: cadetblue;
+   }
+  </style>
+ </head>
+ <body>
+  <h1> Registration Form </h1>
   <form action="/submit" method="post">
   <label for="name"> Name: </label>
   <input type="text" id="none" name="name"> <br> <br>
